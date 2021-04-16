@@ -1,6 +1,12 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { AppBar,Toolbar,IconButton,Typography,Button} from "@material-ui/core";
+import {
+  AppBar,
+  Toolbar,
+  IconButton,
+  Typography,
+  Button,
+} from "@material-ui/core";
 import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import { grey } from "@material-ui/core/colors";
@@ -40,7 +46,7 @@ const menu = [
   { title: "More", path: "/more" },
 ];
 
-const Header = () => {
+const NavBar = () => {
   const classes = useStyles();
 
   return (
@@ -80,4 +86,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;
